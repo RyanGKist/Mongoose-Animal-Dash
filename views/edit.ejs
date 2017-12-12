@@ -1,0 +1,9 @@
+
+
+<h5>Edit <%= result[0].creator_name %>'s Bird </h5>
+<form action='/bird/edit/<%= result[0].animal_name%>' method='post'>
+    <input type = 'text' name='animal_rename'>
+    <button type='submit'>Edit <%= result[0].animal_name %></button>
+</form>
+
+<a href ='/'><button>Go home!</button></a>

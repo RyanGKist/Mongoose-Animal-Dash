@@ -1,0 +1,11 @@
+<h1>These are Birds added by users</h1>
+<hr>
+    <% for (var x in bird) {%>
+    <h4>Birds Name : <%=bird[x].animal_name%> was created by : <%=bird[x].creator_name%></h4>
+    <a href= '/bird/<%=bird[x].animal_name%>'>View <%=bird[x].creator_name%>'s Bird</a>
+    <%} %>
+    <hr>
+
+
+
+<a href='/bird/new'><button>Create new Bird!</button></a>
